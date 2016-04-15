@@ -1,0 +1,309 @@
+@import "fonts.css";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {  
+  color: #000;
+}
+
+div{
+  color: #fff
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font: 20vmin/1 HUGEAvantGardeBold;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #fff;
+}
+
+p{
+  color: #000;
+  font: 14px/1.3 Galaxie;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+nav{
+  background-color: #ec008c;
+  padding: 0px 24px;
+  width: auto;
+  height: 70px;
+}
+
+ul li{
+  list-style: none;
+}
+
+a#brand{  
+  cursor: pointer;
+  float: left;
+  height: 24px;
+  left: 0;
+  margin: 22px 0 0;
+  position: relative;
+  transition: all 0.5s ease 0.1s;
+  width: 70px;
+}
+
+nav #navMobileStart{
+  border-top: 5px solid #fff;
+  cursor: pointer;
+  display: none;
+  height: 18px;
+  left: 0;
+  position: relative;
+  top: 25px;
+  transition: all 0.5s ease 0.1s;
+  width: 30px;
+}
+
+nav #navMobileStart:before{
+  border-top: 5px solid #fff;
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 100%;
+}
+
+nav #navMobileStart:after{
+  border-bottom: 5px solid #fff;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+
+nav .navMobileStart::before {
+  transform: rotate(45deg)!important;
+  transition: all 0.5s ease 0.1s;
+}
+
+nav .navMobileStart::after {
+  bottom: 9px !important;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease 0.1s;
+}
+
+nav .navMobileStart {
+  border-top: medium none!important; 
+  left: 80vmin!important;
+  transition: all 0.5s ease 0.1s;
+  top: 6px
+}
+
+.content {
+    display: block;
+    margin: 20px 30vmin;
+    width: auto;
+}
+
+section#home {
+  left: 0;
+  position: relative;
+  transition: all 0.5s ease 0.1s;
+}
+
+section#home img{
+  width: 100%
+}
+
+#menu .subMenu{
+  background-color: #fff;
+  min-width: 260px;
+  position: absolute;
+}
+
+#menu .subMenu li{
+  display: none;  
+  position: relative;
+}
+
+active{
+  display: block;
+}
+
+#menu .subMenu li a{
+  color: #000;
+    font: 16px/1.3 Galaxie;
+    width: 69.3%;
+}
+
+#menu .subMenu li a:hover{
+  background-color: #EEEEEE
+}
+
+
+#menu{
+  background-color: transparent;
+  float: left;
+  height: 100%;
+  margin-left: 30px;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+}
+
+#menu li{
+  color: #FFF
+} 
+
+nav span{
+  display: none;
+}
+
+nav ul#menu li{
+  display: inline-block;
+  font: 4vmin/1 HUGEAvantGardeBold;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.5s ease 0.1s;
+}
+
+nav ul#menu li a{
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font: 28px/1 HUGEAvantGardeBold;
+  height: 70%;
+  padding: 21px 40px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.5s ease 0.1s;
+}
+
+nav ul#menu li a:hover{
+  background-color: #FFF;
+  color: #EC008C
+}
+
+@media screen and (max-width: 700px){
+
+  .menuMove{
+    left: 0!important;    
+  }
+
+  #menu{
+    background-color: #fff;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: -100vmin;
+    margin-left: 0;
+    position: absolute;
+    top: 70px;
+    transition: all 0.5s ease 0.1s;
+    width: 80%;
+  } 
+
+  .brandMove{
+    left: 20px!important
+  }
+
+  nav ul#menu li {
+    display: inline-block;
+    font: 4vmin/1 HUGEAvantGardeBold;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.5s ease 0.1s;
+    width: 100%;
+  }
+
+  nav ul#menu li a{
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font: 5vmin/1 HUGEAvantGardeBold;
+    height: unset;
+    margin: 0;
+    padding: 15px 0 15px 20px;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  nav ul#menu li a:hover{
+    background-color: transparent;
+    color: #000
+  }
+
+  nav ul#menu li:first-child{
+    padding-top: 10px
+  }
+
+  nav ul#menu li:hover{
+    background-color:#eeeeee
+  }
+
+  nav span{
+    bottom: 100px;
+    display: block;
+    font: 3vmin/1 Helvetica;
+    left: 20px;
+    position: absolute;
+  }
+
+  a#brand{
+      left: -30vmin;
+      position: absolute;      
+  }
+  
+  nav #navDesktop{
+    display: none
+  }
+
+  nav #menu, nav #navMobileStart{
+    display: block
+  }
+
+  h1 {
+    bottom: 0;
+    color: #000;
+    display: inline-block;
+    font-size: 12vmin;
+    height: auto;
+    left: unset;
+    letter-spacing: -0.4px;
+    margin: 50px 0;
+    position: relative;
+    text-align: left;
+    transform: unset;
+    width: auto;
+  }
+
+  .content{
+    display: block;
+    margin: 0 20px;
+    width: auto;
+  }
+
+  section.home{
+    left: 80vmin!important;    
+  }
+
+  section.home:after{
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.5s ease 0.1s;
+  }
+
+
+}
