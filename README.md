@@ -1,4 +1,4 @@
-# Huge Navigation Exercise by Adolfo Castro
+# Navigation
 
 ## Is Done!
 
